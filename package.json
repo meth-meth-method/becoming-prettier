@@ -1,15 +1,10 @@
 {
   "name": "becoming-prettier",
-  "description": ".",
-  "license": "ISC",
-  "repository": "yes",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier '*/**/*.{js,jsx}'",
+    "format:auto": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different"
   },
-  "keywords": [],
-  "author": "",
   "dependencies": {
     "prettier": "^1.7.4"
   }
